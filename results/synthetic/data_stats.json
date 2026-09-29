@@ -1,0 +1,15 @@
+{
+  "n_users": 3000,
+  "n_items": 2000,
+  "n_ratings": 200982,
+  "density": 0.033497,
+  "frac_positive": 0.54483983640326,
+  "train_ratings": 160785,
+  "train_users": 2791,
+  "val_ratings": 20098,
+  "val_users": 1039,
+  "test_ratings": 20099,
+  "test_users": 830,
+  "test_users_cold": 59,
+  "test_positive_pairs_on_cold_items": 361
+}

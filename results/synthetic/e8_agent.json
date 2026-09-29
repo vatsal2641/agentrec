@@ -1,0 +1,385 @@
+{
+  "dataset": "synthetic",
+  "k": 5,
+  "n_users": 150,
+  "n_requests": 1050,
+  "systems": {
+    "feed": {
+      "by_type": {
+        "genre": {
+          "filled": 1.0,
+          "hard_violation": 0.0,
+          "soft_ok": 0.7506666666666666,
+          "grounded": 1.0,
+          "taste_similarity": 0.5232437379873964,
+          "n": 150
+        },
+        "genre_decade": {
+          "filled": 1.0,
+          "hard_violation": 0.0,
+          "soft_ok": 0.10133333333333333,
+          "grounded": 1.0,
+          "taste_similarity": 0.5232437379873964,
+          "n": 150
+        },
+        "genre_exclude": {
+          "filled": 1.0,
+          "hard_violation": 0.013333333333333334,
+          "soft_ok": 0.7506666666666666,
+          "grounded": 1.0,
+          "taste_similarity": 0.5232437379873964,
+          "n": 150
+        },
+        "hidden_gems": {
+          "filled": 1.0,
+          "hard_violation": 0.0,
+          "soft_ok": 0.11466666666666668,
+          "grounded": 1.0,
+          "taste_similarity": 0.5232437379873964,
+          "n": 150
+        },
+        "memory": {
+          "filled": 1.0,
+          "hard_violation": 0.013333333333333334,
+          "soft_ok": 1.0,
+          "grounded": 1.0,
+          "taste_similarity": 0.5232437379873964,
+          "n": 150
+        },
+        "memory_followup": {
+          "filled": 1.0,
+          "hard_violation": 0.013333333333333334,
+          "soft_ok": 1.0,
+          "grounded": 1.0,
+          "taste_similarity": 0.5232437379873964,
+          "n": 150
+        },
+        "similar": {
+          "filled": 1.0,
+          "hard_violation": 0.0,
+          "soft_ok": 1.0,
+          "grounded": 1.0,
+          "taste_similarity": 0.5232437379873964,
+          "seed_similarity": 0.5275873467065425,
+          "n": 150
+        },
+        "similar_exclude": {
+          "filled": 1.0,
+          "hard_violation": 0.013333333333333334,
+          "soft_ok": 1.0,
+          "grounded": 1.0,
+          "taste_similarity": 0.5232437379873964,
+          "seed_similarity": 0.5275873467065425,
+          "n": 150
+        },
+        "ALL": {
+          "filled": 1.0,
+          "hard_violation": 0.006666666666666667,
+          "soft_ok": 0.7146666666666666,
+          "grounded": 1.0,
+          "taste_similarity": 0.5232437379873964,
+          "seed_similarity": 0.5275873467065425,
+          "n": 1200
+        }
+      },
+      "latency": {
+        "n": 1200,
+        "p50_ms": 2.756916999715031,
+        "p95_ms": 3.912917049774478,
+        "p99_ms": 5.856894769985956,
+        "mean_ms": 2.9193019683187535
+      },
+      "mean_tool_calls": 0.0,
+      "mean_llm_calls": 0.0,
+      "fallbacks": 0,
+      "grounding_violations_caught": 0,
+      "requests_with_replanning": 0,
+      "schema_errors": 0,
+      "tool_errors": 0,
+      "n_turns": 1200
+    },
+    "fixed": {
+      "by_type": {
+        "genre": {
+          "filled": 1.0,
+          "hard_violation": 0.0,
+          "soft_ok": 1.0,
+          "grounded": 1.0,
+          "taste_similarity": 0.506259822100849,
+          "n": 150
+        },
+        "genre_decade": {
+          "filled": 0.7333333333333333,
+          "hard_violation": 0.0,
+          "soft_ok": 0.8933333333333333,
+          "grounded": 1.0,
+          "taste_similarity": 0.38037982624642597,
+          "n": 150
+        },
+        "genre_exclude": {
+          "filled": 1.0,
+          "hard_violation": 0.0,
+          "soft_ok": 1.0,
+          "grounded": 1.0,
+          "taste_similarity": 0.506177878611376,
+          "n": 150
+        },
+        "hidden_gems": {
+          "filled": 1.0,
+          "hard_violation": 0.0,
+          "soft_ok": 1.0,
+          "grounded": 1.0,
+          "taste_similarity": 0.42838000289114025,
+          "n": 150
+        },
+        "memory": {
+          "filled": 1.0,
+          "hard_violation": 0.0,
+          "soft_ok": 1.0,
+          "grounded": 1.0,
+          "taste_similarity": 0.5229746844016174,
+          "n": 150
+        },
+        "memory_followup": {
+          "filled": 1.0,
+          "hard_violation": 0.013333333333333334,
+          "soft_ok": 1.0,
+          "grounded": 1.0,
+          "taste_similarity": 0.5232437379873964,
+          "n": 150
+        },
+        "similar": {
+          "filled": 1.0,
+          "hard_violation": 0.0,
+          "soft_ok": 1.0,
+          "grounded": 1.0,
+          "taste_similarity": 0.4743062389043064,
+          "seed_similarity": 0.6639021222227133,
+          "n": 150
+        },
+        "similar_exclude": {
+          "filled": 1.0,
+          "hard_violation": 0.0,
+          "soft_ok": 1.0,
+          "grounded": 1.0,
+          "taste_similarity": 0.4750729431260256,
+          "seed_similarity": 0.6615507585415857,
+          "n": 150
+        },
+        "ALL": {
+          "filled": 0.9666666666666667,
+          "hard_violation": 0.0016666666666666668,
+          "soft_ok": 0.9866666666666667,
+          "grounded": 1.0,
+          "taste_similarity": 0.47840641293955044,
+          "seed_similarity": 0.6627264403821495,
+          "n": 1200
+        }
+      },
+      "latency": {
+        "n": 1200,
+        "p50_ms": 3.3951310001612,
+        "p95_ms": 8.348679300252114,
+        "p99_ms": 9.698955559761089,
+        "mean_ms": 4.3003074008409685
+      },
+      "mean_tool_calls": 0.0,
+      "mean_llm_calls": 0.0,
+      "fallbacks": 0,
+      "grounding_violations_caught": 0,
+      "requests_with_replanning": 0,
+      "schema_errors": 0,
+      "tool_errors": 0,
+      "n_turns": 1200
+    },
+    "agent_rule": {
+      "by_type": {
+        "genre": {
+          "filled": 1.0,
+          "hard_violation": 0.0,
+          "soft_ok": 1.0,
+          "grounded": 1.0,
+          "taste_similarity": 0.506259822100849,
+          "n": 150
+        },
+        "genre_decade": {
+          "filled": 1.0,
+          "hard_violation": 0.0,
+          "soft_ok": 0.7373333333333333,
+          "grounded": 1.0,
+          "taste_similarity": 0.4378809729069028,
+          "n": 150
+        },
+        "genre_exclude": {
+          "filled": 1.0,
+          "hard_violation": 0.0,
+          "soft_ok": 1.0,
+          "grounded": 1.0,
+          "taste_similarity": 0.506177878611376,
+          "n": 150
+        },
+        "hidden_gems": {
+          "filled": 1.0,
+          "hard_violation": 0.0,
+          "soft_ok": 1.0,
+          "grounded": 1.0,
+          "taste_similarity": 0.42838000289114025,
+          "n": 150
+        },
+        "memory": {
+          "filled": 1.0,
+          "hard_violation": 0.0,
+          "soft_ok": 1.0,
+          "grounded": 1.0,
+          "taste_similarity": 0.5229746844016174,
+          "n": 150
+        },
+        "memory_followup": {
+          "filled": 1.0,
+          "hard_violation": 0.0,
+          "soft_ok": 1.0,
+          "grounded": 1.0,
+          "taste_similarity": 0.5229746844016174,
+          "n": 150
+        },
+        "similar": {
+          "filled": 1.0,
+          "hard_violation": 0.0,
+          "soft_ok": 1.0,
+          "grounded": 1.0,
+          "taste_similarity": 0.4743062389043064,
+          "seed_similarity": 0.6639021222227133,
+          "n": 150
+        },
+        "similar_exclude": {
+          "filled": 1.0,
+          "hard_violation": 0.0,
+          "soft_ok": 1.0,
+          "grounded": 1.0,
+          "taste_similarity": 0.4750729431260256,
+          "seed_similarity": 0.6615507585415857,
+          "n": 150
+        },
+        "ALL": {
+          "filled": 1.0,
+          "hard_violation": 0.0,
+          "soft_ok": 0.9671666666666666,
+          "grounded": 1.0,
+          "taste_similarity": 0.4842534034179793,
+          "seed_similarity": 0.6627264403821495,
+          "n": 1200
+        }
+      },
+      "latency": {
+        "n": 1200,
+        "p50_ms": 4.429113000242069,
+        "p95_ms": 19.16009650053638,
+        "p99_ms": 21.219090610011335,
+        "mean_ms": 7.260684622510023
+      },
+      "mean_tool_calls": 4.441666666666666,
+      "mean_llm_calls": 4.441666666666666,
+      "fallbacks": 0,
+      "grounding_violations_caught": 0,
+      "requests_with_replanning": 40,
+      "schema_errors": 0,
+      "tool_errors": 0,
+      "n_turns": 1200
+    },
+    "agent_halluc": {
+      "by_type": {
+        "genre": {
+          "filled": 1.0,
+          "hard_violation": 0.0,
+          "soft_ok": 1.0,
+          "grounded": 1.0,
+          "taste_similarity": 0.506259822100849,
+          "n": 150
+        },
+        "genre_decade": {
+          "filled": 1.0,
+          "hard_violation": 0.0,
+          "soft_ok": 0.7373333333333333,
+          "grounded": 1.0,
+          "taste_similarity": 0.4378809729069028,
+          "n": 150
+        },
+        "genre_exclude": {
+          "filled": 1.0,
+          "hard_violation": 0.0,
+          "soft_ok": 1.0,
+          "grounded": 1.0,
+          "taste_similarity": 0.506177878611376,
+          "n": 150
+        },
+        "hidden_gems": {
+          "filled": 1.0,
+          "hard_violation": 0.0,
+          "soft_ok": 1.0,
+          "grounded": 1.0,
+          "taste_similarity": 0.42838000289114025,
+          "n": 150
+        },
+        "memory": {
+          "filled": 1.0,
+          "hard_violation": 0.0,
+          "soft_ok": 1.0,
+          "grounded": 1.0,
+          "taste_similarity": 0.5229746844016174,
+          "n": 150
+        },
+        "memory_followup": {
+          "filled": 1.0,
+          "hard_violation": 0.0,
+          "soft_ok": 1.0,
+          "grounded": 1.0,
+          "taste_similarity": 0.5229746844016174,
+          "n": 150
+        },
+        "similar": {
+          "filled": 1.0,
+          "hard_violation": 0.0,
+          "soft_ok": 1.0,
+          "grounded": 1.0,
+          "taste_similarity": 0.4743062389043064,
+          "seed_similarity": 0.6639021222227133,
+          "n": 150
+        },
+        "similar_exclude": {
+          "filled": 1.0,
+          "hard_violation": 0.0,
+          "soft_ok": 1.0,
+          "grounded": 1.0,
+          "taste_similarity": 0.4750729431260256,
+          "seed_similarity": 0.6615507585415857,
+          "n": 150
+        },
+        "ALL": {
+          "filled": 1.0,
+          "hard_violation": 0.0,
+          "soft_ok": 0.9671666666666666,
+          "grounded": 1.0,
+          "taste_similarity": 0.4842534034179793,
+          "seed_similarity": 0.6627264403821495,
+          "n": 1200
+        }
+      },
+      "latency": {
+        "n": 1200,
+        "p50_ms": 4.725956000129372,
+        "p95_ms": 22.444109750040294,
+        "p99_ms": 25.80597106007189,
+        "mean_ms": 7.959440460013714
+      },
+      "mean_tool_calls": 5.441666666666666,
+      "mean_llm_calls": 5.441666666666666,
+      "fallbacks": 0,
+      "grounding_violations_caught": 1200,
+      "requests_with_replanning": 40,
+      "schema_errors": 0,
+      "tool_errors": 1200,
+      "n_turns": 1200
+    }
+  },
+  "note": "agent_rule uses a deterministic rule-based planner, NOT an LLM"
+}

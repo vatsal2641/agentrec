@@ -1,0 +1,27 @@
+# SYNTHETIC data in ML-1M format (scripts/make_synthetic_data.py). Results are NOT MovieLens results.
+name: synthetic
+seed: 42
+data:
+  raw_dir: data/raw/synthetic
+  pos_threshold: 4        # rating >= 4 -> positive (implicit conversion)
+  val_quantile: 0.8       # global temporal split points (by timestamp quantile)
+  test_quantile: 0.9
+eval:
+  ks: [10, 20, 50]
+models:
+  itemknn: {k_neighbors: 100, shrink: 10.0}
+  bpr: {dim: 64, epochs: 30, lr: 0.05, reg: 0.0005, batch_size: 4096}
+  two_tower: {dim: 64, epochs: 20, lr: 0.05, batch_size: 1024, temperature: 0.1, reg: 0.0001, history_len: 50}
+retrieval:
+  n_candidates: [50, 100, 200, 500]
+  ivf: {n_lists: 64, n_probe: 8}
+ranking:
+  n_candidates: 200
+bandit:
+  n_rounds: 20000
+  slate_size: 5
+  n_candidates: 50
+  alpha_ucb: 1.0
+  epsilon: 0.1
+  ts_v: 0.5
+  noise_levels: [0.0, 0.1, 0.2, 0.3]

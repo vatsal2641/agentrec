@@ -51,7 +51,7 @@ Good refreshers:
    `python -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt`.
 4. Run `pytest -q`. All 59 tests should pass.
 5. Download MovieLens-1M (see `data/README.md`) and start `bash scripts/run_all.sh configs/ml1m.yaml`.
-   Let it run in the background; expect roughly 30–60 minutes on a laptop CPU. Commit
+   Let it run in the background; expect roughly 1–2 hours on a laptop CPU (an estimate scaled from the synthetic run, which took about 25 minutes on 2 cores). Commit
    `results/ml1m/*.md`.
 6. Run `python scripts/demo.py configs/synthetic.yaml` and play with it for 15 minutes. Don't try to
    understand it yet.

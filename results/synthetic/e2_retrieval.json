@@ -1,0 +1,104 @@
+{
+  "dataset": "synthetic",
+  "n_items": 2000,
+  "dim": 64,
+  "n_warm_users": 742,
+  "n_cold_users": 63,
+  "recall_at_N": {
+    "50": {
+      "embedding_only": 0.3882676607319818,
+      "popular_only": 0.1430539550498034,
+      "union_90_10": 0.38252097553695685,
+      "cold_users_popular": 0.17803210611955142
+    },
+    "100": {
+      "embedding_only": 0.5434643922042952,
+      "popular_only": 0.22277644946844993,
+      "union_90_10": 0.5304846826446892,
+      "cold_users_popular": 0.284630300979742
+    },
+    "200": {
+      "embedding_only": 0.6964334820900387,
+      "popular_only": 0.34361291398928695,
+      "union_90_10": 0.6866598441292526,
+      "cold_users_popular": 0.4155752209029227
+    },
+    "500": {
+      "embedding_only": 0.8752649333875133,
+      "popular_only": 0.5928970522853048,
+      "union_90_10": 0.8656506050510414,
+      "cold_users_popular": 0.6187109690467805
+    }
+  },
+  "ann": {
+    "exact": {
+      "ann_recall@100": 1.0,
+      "n": 300,
+      "p50_ms": 0.031031499929667916,
+      "p95_ms": 0.047215200220307466,
+      "p99_ms": 0.06738023976140534,
+      "mean_ms": 0.033541383366658316
+    },
+    "ivf_nlist64_nprobe1": {
+      "ann_recall@100": 0.3543,
+      "frac_items_scanned": 0.015625,
+      "n": 300,
+      "p50_ms": 0.0329145000250719,
+      "p95_ms": 0.05608695037153667,
+      "p99_ms": 0.07232547984131085,
+      "mean_ms": 0.0362329600253967
+    },
+    "ivf_nlist64_nprobe2": {
+      "ann_recall@100": 0.5429666666666666,
+      "frac_items_scanned": 0.03125,
+      "n": 300,
+      "p50_ms": 0.035530500099412166,
+      "p95_ms": 0.06024614995112643,
+      "p99_ms": 0.08383855019928887,
+      "mean_ms": 0.039098863323185164
+    },
+    "ivf_nlist64_nprobe4": {
+      "ann_recall@100": 0.7222,
+      "frac_items_scanned": 0.0625,
+      "n": 300,
+      "p50_ms": 0.038367500110325636,
+      "p95_ms": 0.07213920021058584,
+      "p99_ms": 0.0931446597405737,
+      "mean_ms": 0.04261531331091343
+    },
+    "ivf_nlist64_nprobe8": {
+      "ann_recall@100": 0.8660666666666667,
+      "frac_items_scanned": 0.125,
+      "n": 300,
+      "p50_ms": 0.042241000301146414,
+      "p95_ms": 0.07879990066612663,
+      "p99_ms": 0.09490266977991267,
+      "mean_ms": 0.04652855665275032
+    },
+    "ivf_nlist64_nprobe16": {
+      "ann_recall@100": 0.9582333333333334,
+      "frac_items_scanned": 0.25,
+      "n": 300,
+      "p50_ms": 0.08643499995741877,
+      "p95_ms": 0.1658436503475969,
+      "p99_ms": 0.5440521396394611,
+      "mean_ms": 0.10915222330974454
+    },
+    "ivf_nlist64_nprobe32": {
+      "ann_recall@100": 0.9952666666666669,
+      "frac_items_scanned": 0.5,
+      "n": 300,
+      "p50_ms": 0.1399304996994033,
+      "p95_ms": 0.2289190997089463,
+      "p99_ms": 0.27220110005146125,
+      "mean_ms": 0.15009100333069605
+    },
+    "ivf_build_s": 0.06554774999949586,
+    "faiss_flat_ip": "not installed (pip install faiss-cpu to compare)"
+  },
+  "bruteforce_extrapolation": {
+    "measured_ns_per_item_dot": 9.195097999963766,
+    "EXTRAPOLATED_ms_per_query_10M_items": 91.95097999963767,
+    "note": "single-thread numpy on this machine; extrapolation, not a measurement at 10M items"
+  }
+}
